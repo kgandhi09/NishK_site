@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NishK Studio | Fashion & Creative Design</title>
+  <meta name="description" content="NishK Studio is a fashion and creative design brand crafting elegant fashion, product design, styling, and bespoke creative experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-glow"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="NishK Studio Home">
+      <span class="brand-mark">N</span>
+      <span class="brand-text">NishK<span>Studio</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#collections">Collections</a>
+      <a href="#services">Services</a>
+      <a href="#atelier">Atelier</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#contact">Book a Consultation</a>
+  </header>
+
+  <main id="home">
+    <section class="hero section-pad">
+      <div class="hero-copy">
+        <p class="eyebrow">Fashion • Product • Creative Direction</p>
+        <h1>Royal design, softly crafted for modern dreamers.</h1>
+        <p class="hero-text">NishK Studio creates expressive fashion, refined products, and intimate visual stories with a palette of romance, warmth, and quiet luxury.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#collections">Explore the Studio</a>
+          <a class="btn btn-ghost" href="#contact">Start a Project</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="NishK Studio featured design card">
+        <div class="arch-frame">
+          <div class="arch-inner">
+            <span class="sparkle one">✦</span>
+            <span class="sparkle two">✧</span>
+            <div class="monogram">NishK</div>
+            <p>Atelier of fashion, form & feeling</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro strip">
+      <p>Where couture softness meets sculptural detail, and every piece feels personal.</p>
+    </section>
+
+    <section id="collections" class="section-pad collections">
+      <div class="section-heading">
+        <p class="eyebrow">Signature Worlds</p>
+        <h2>Designed with grace, detail, and emotion.</h2>
+      </div>
+      <div class="cards-grid">
+        <article class="feature-card blush">
+          <span>01</span>
+          <h3>Fashion Design</h3>
+          <p>Bespoke silhouettes, festive wear, editorial pieces, and graceful modern couture.</p>
+        </article>
+        <article class="feature-card ivory">
+          <span>02</span>
+          <h3>Product Design</h3>
+          <p>Elegant objects, lifestyle accessories, packaging ideas, and premium design concepts.</p>
+        </article>
+        <article class="feature-card rose">
+          <span>03</span>
+          <h3>Creative Styling</h3>
+          <p>Visual direction, moodboards, color stories, brand styling, and curated experiences.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="section-pad services">
+      <div class="service-panel">
+        <p class="eyebrow">What We Create</p>
+        <h2>A studio for refined expression.</h2>
+        <p>NishK blends royal richness with gentle comfort — ideal for clients who want work that feels premium without feeling distant.</p>
+      </div>
+      <div class="service-list">
+        <div><strong>01</strong><span>Custom fashion concepts</span></div>
+        <div><strong>02</strong><span>Collection moodboards</span></div>
+        <div><strong>03</strong><span>Product form exploration</span></div>
+        <div><strong>04</strong><span>Packaging and visual language</span></div>
+        <div><strong>05</strong><span>Brand aesthetics and styling</span></div>
+      </div>
+    </section>
+
+    <section id="atelier" class="section-pad atelier">
+      <div class="atelier-image">
+        <div class="fabric-card"></div>
+      </div>
+      <div class="atelier-copy">
+        <p class="eyebrow">The Atelier Mood</p>
+        <h2>Regal colors, delicate textures, warm memories.</h2>
+        <p>Red for confidence, pink for romance, white for clarity, gold for grandeur, and silver for timeless polish. Together, they become the NishK language.</p>
+        <blockquote>“Every detail should feel intentional, beautiful, and close to the heart.”</blockquote>
+      </div>
+    </section>
+
+    <section class="section-pad gallery" aria-label="Design gallery preview">
+      <div class="gallery-item tall"><span>Velvet</span></div>
+      <div class="gallery-item"><span>Ivory</span></div>
+      <div class="gallery-item"><span>Rose</span></div>
+      <div class="gallery-item wide"><span>Gold</span></div>
+    </section>
+
+    <section id="contact" class="section-pad contact">
+      <div>
+        <p class="eyebrow">Begin with NishK</p>
+        <h2>Let’s craft something unforgettable.</h2>
+        <p>For collaborations, bespoke design, styling, or product concepts, reach out and share your vision.</p>
+      </div>
+      <form class="contact-form" action="mailto:hello@nishk.studio" method="post" enctype="text/plain">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="Tell us about your idea"></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Send Enquiry</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> NishK Studio. All rights reserved.</p>
+    <p>www.nishk.studio</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
